@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro Online</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="favicon/icons8-cronômetro-100.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dark-div">
+        <i class="fa-solid fa-circle-half-stroke dark" id="ld"></i>
+    </div>
+
+
+    <div class="song-div">
+        <audio class="audio" src="song/Aaron Smith - Dancin (KRONO Remix).mp3"></audio>
+        <i class="fa-solid fa-music mm"></i>
+        <i class="fa-solid fa-volume-xmark mute"></i>
+    </div>
+
+
+    
+    <div id="container">
+
+        <img  src="img/icons8-tempo-99.png" alt="imagem de um relogio">
+
+
+        <h1 class="title">Cronômetro Online</h1>
+
+        <div id="container__timer">
+
+            <div class=" ww horas">00</div>
+            <div class="separator" >:</div>
+
+            <div class=" ww minutes">00</div>
+            <div class="separator" >:</div>
+
+            <div class=" ww seconds">00</div>
+            <div class="separator" >:</div>
+
+            <div class=" ww millesimo">000</div>
+            
+        </div>
+
+
+        <div id="container__buttons">
+            <button id="startBtn">Iniciar</button>
+            <button id="pauseBtn">Pausa</button>
+            <button id="resumeBtn">Continuar</button>
+            <button id="resetBtn">Resetar</button>
+            
+        </div>
+
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap');
+
+
+
+:root {
+    --font-bold: bold;
+    --font-bolder: 800;
+    --font-family: 'Orbitron', sans-serif;
+    --transparente: transparent;
+    --color-text-primary: #b0b3b8;
+    --background-color: linear-gradient(to right, #434343 0%, black 100%);
+    --box-shadow-inset: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, #2f4562 0px 18px 36px -18px inset;
+    --box-shadow-out: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, #2f4562 0px 30px 60px -30px;
+    --btn-start-color: #b0b3b8;
+    --btn-reset: #b0b3b8;
+    --background-button: #2f4562;
+    --border-button: #2f4562;
+    --icone-music: #b0b3b8;
+    --color-buton-hover: #b0b3b8;
+    --color-buton-hover-reset: #b0b3b8;
+    --bacground-icones-hover: #b0b3b80c;
+
+}
+
+
+
+
+.light{
+    --color-text-primary: #000;
+    --background-color:  radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%); background-blend-mode: screen; 
+    --box-shadow-inset: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, #484b6a 0px 18px 36px -18px inset;
+    --box-shadow-out: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, #484b6a 0px 30px 60px -30px;
+    --transparente: transparent;
+    --color-text-secundary: #484b6a;
+    --btn-start-color: #fff;
+    --border-conatiner: #484b6a3f;
+    --bacground-icones-hover: #484b6a1f;
+    --font-bold: bold; 
+    --font-bolder: 800; 
+    --font-family: 'Orbitron', sans-serif; 
+    --btn-reset: #484b6a;
+    --background-button:#484b6a;
+    --border-button: #484b6a;
+    --icones: #000;
+    --icone-music: #000;
+    --color-buton-hover: #484b6a;
+    --color-buton-hover-reset: #fff;
+   }
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: var(--background-color);
+    overflow: hidden;
+}
+
+
+
+
+
+img {
+    width: 120px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: var(--box-shadow-inset);
+    box-shadow: var(--box-shadow-out);
+    background-color: var(--transparente);
+    width: 800px;
+    border-radius: 35px;
+    border-bottom: 1px solid var(--border-conatiner);
+}
+
+
+#container__timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 40px;
+    color: var(--color-text-primary);
+}
+
+.millesimo {
+    font-size: 20px;
+    color: var(--color-text-secundary);
+}
+
+
+#container__buttons {
+    padding: 20px;
+    display: flex;
+    gap: 2.6rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title {
+    font-weight: var(--font-bold);
+    color:var(--color-text-primary);
+    font-size: 2.2rem;  
+    letter-spacing: 4px;
+}
+
+button {
+    outline: none;
+    padding: 10px 20px;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: var(--font-bold);
+    font-size: 18px;
+    background-color: var(--color-text-secundary);
+    color: var(--branco);
+    cursor: pointer;
+    letter-spacing: 3px;
+    transition: 0.2s all ease-in-out;
+    text-align: center;
+}
+
+.ww {
+    width: 50px;
+    text-align: center;
+}
+
+
+#resetBtn, #resumeBtn {
+    border: 1px solid var(--border-button);
+    background-color: var(--transparente);
+    font-weight: var(--font-bolder);
+    color: var(--btn-reset);
+}
+
+
+#resetBtn:hover, #resumeBtn:hover {
+    border: none;
+    background-color: var(--background-button);
+    color: var(--color-buton-hover-reset);
+}
+
+
+#startBtn, #pauseBtn {
+    border: 1px solid var(--border-button);
+    color: var(--btn-start-color);
+    background-color: var(--background-button);
+    font-weight: var(--font-bolder);
+}
+
+#startBtn:hover, #pauseBtn:hover {
+    background-color: var(--transparente);
+    color: var(--color-buton-hover);
+    font-weight: var(--font-bolder);
+}
+
+
+
+
+.dark-div {
+    position: absolute;
+    top: 1.5%;
+    right: 3%;
+    font-size: 28px;
+    cursor: pointer;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    text-align: center;
+    animation: slide-out 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icone-music);
+
+}
+
+
+
+
+.dark-div:hover {
+    background-color: var(--bacground-icones-hover);
+}
+
+
+.song-div { 
+    position: absolute;
+    top: 1.5%;
+    left: 3%;
+    font-size: 28px;
+    cursor: pointer;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    text-align: center;
+    animation: slide-out 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icone-music);
+}
+
+
+.song-div:hover {
+    background-color: var(--bacground-icones-hover);
+}
+
+
+
+
+.mute {
+    display: none;
+}
+
+
+#pauseBtn, #resumeBtn {
+display: none;
+}
+
+
+
+@media screen and (max-width: 830px) {
+    #container {
+        width: 600px;
+    }
+
+    .dark-div, .song-div {
+        font-size: 26px;
+    }
+
+}
+
+
+@media screen and (max-width: 625px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    #container__timer {
+        font-size: 28px;
+    }
+
+
+    .millesimo {
+        font-size: 14px;
+    }
+
+    #container {
+        width: 490px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .dark-div, .song-div {
+        font-size: 24px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 515px) {
+
+    #container {
+        width: 400px;
+    }
+
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+
+    #container__timer {
+        font-size: 24px;
+    }
+
+
+    .millesimo {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+
+    .dark-div, .song-div {
+        font-size: 22px;
+    }
+}
+
+
+
+@media screen and (max-width: 418px)  {
+    #container {
+        width: 340px;
+    }
+
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+
+    #container__timer {
+        font-size: 20px;
+    }
+
+
+    .millesimo {
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    .dark-div, .song-div {
+        font-size: 20px;
+    }
+}
+
